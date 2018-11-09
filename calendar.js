@@ -2,10 +2,16 @@
 $(document).ready(function(){
   $('table').click();
 })
-$('.clean').click(function(){
+$('.clean2').click(function(){
   $('.select').removeClass('select');
+  $('.wrap').toggleClass('active');
   $('table').click();
 })
+
+$('.clean').on('click', function(){
+  $('.wrap').toggleClass('active');
+  return false;
+});
 
 $('td').click(function(){
   if($(this).hasClass('select')){
