@@ -3,18 +3,27 @@
   <head>
     <meta http-equiv="content-type" content="text/html" charset="UTF-8" />
     <meta name="author" content="Yifei Li" >
-    <title>Enter Your Zip Code</title>
+    <title>Enter Your Username and Password</title>
     <link rel="icon" href="assets/zip.png" type="image/icon" />
   <header>
 
   </header>
 
   <style>
-    html, body {
+    html {
       height: 100%;
       width: 100%;
     }
-
+    body {
+      height: 100%;
+      width: 100%;
+      background-image: url("assets/background.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding-bottom: 100px;
+      margin: 0px
+    }
     .container {
       align-items: center;
       display: flex;
@@ -32,6 +41,9 @@
       background-color: #0099cc;
       color: white;
       border-radius: 15px;
+      display: flex;
+      justify-content: center;
+
     }
 
     .button:hover {
@@ -50,20 +62,28 @@
       height: 55px;
       width: 100px;
       font-size: 30px;
+      display: flex;
       text-align: center;
-      margin-left: 210px;
+      margin-left: 170px;
     }
 
+    .middle {
+      margin-left: 50px
+    }
   </style>
 </head>
 
   <body>
 
     <div class="container"><div class="content">
-    <h2>Please enter your zip code:</h2><br>
-    <form action="action_page.php">
-      <input type="text" value="Your 5-digit zip code"></input><br><br><br><br>
-      <button class="button"><a href="question.html" style="text-decoration:none">Next</a></button>
+      <h2 class="middle"><font color="white">Find Free Gyms Near You</font></h2><br>
+
+      <form action="action_page.php">
+      <label for="First_Name"><font color="white">First Name:</font></label>
+      <input name="first_name" type="text" /><br><br>
+      <label for="Name"><font color="white">Last Name:</font></label>
+      <input name="last_name" type="text" /><br><br><br>
+        <button class="button"><a href="zipcode.html" style="text-decoration:none">Login</a></button>
     </div></div>
   </body>
 </html>

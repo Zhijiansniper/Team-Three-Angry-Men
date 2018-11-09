@@ -3,6 +3,12 @@ body{
     margin: auto;
     width: 40%;
     padding: 10px;
+      height: 100%;
+      background-image: url("assets/background.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding-bottom: 100px;
 }
 
 td.select {
@@ -25,9 +31,9 @@ th {
 
 th:nth-child(1){
     width: 10%;
-    background-color:#fff;
-    border-top: 0px;
-    border-left: 0px;
+    background-color:#ccc;
+    border-left: 1px solid #000;
+
 }
 
 td:hover:not(.select) {
@@ -85,8 +91,7 @@ button {
   background-color: #0099cc;
   color: white;
   border-radius: 15px;
-  width: 20%;
-  height: 20%;
+
 }
 
 button:hover {
@@ -97,13 +102,13 @@ button:hover {
 .wrap {
   position: absolute;
   overflow: hidden;
-  top: 65%;
+  top: 42%;
   right: 35%;
-  bottom: 20%;
+  bottom: 40%;
   left: 35%;
   padding: 20px 50px;
   display: block;
-  border-radius: 4px;
+  border-radius: 100px;
   transform: translateY(20px);
   transition: all 0.5s;
   visibility: hidden;
@@ -131,9 +136,12 @@ button:hover {
   border-radius: 50%;
   -webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1);
   transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-color:  #0099cc
+
 }
 
 .wrap.active:before {
+
   height: 2000px;
   width: 2000px;
   border-radius: 50%;
@@ -155,4 +163,8 @@ button:hover {
   z-index: 1;
   opacity: 1;
   transition: all 600ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+#middle {
+  margin-top: 8%
 }

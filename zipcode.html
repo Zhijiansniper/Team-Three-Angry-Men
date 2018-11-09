@@ -4,13 +4,13 @@
     <meta http-equiv="content-type" content="text/html" charset="UTF-8" />
     <meta name="author" content="Yifei Li" >
     <title>Enter Your Zip Code</title>
-    <link rel="icon" href="assets/survey.png" type="image/icon" />
+    <link rel="icon" href="assets/zip.png" type="image/icon" />
   <header>
 
   </header>
 
   <style>
-    html{
+    html {
       height: 100%;
       width: 100%;
     }
@@ -33,28 +33,19 @@
     }
 
     .content {
-      width: 440px; // I'm pretty sure this is required but haven't checked
+      width: auto;
     }
 
     .button {
       border: 0px;
       background-color: #0099cc;
-      padding: 15px;
       color: white;
-      display: inline-block;
       border-radius: 15px;
     }
 
     .button:hover {
       background-color: purple;
       cursor: cell;
-      color: white;
-    }
-
-    .select_style {
-      height: 35px;
-      font-size: 20px;
-      width: 300px;
     }
 
     input {
@@ -65,35 +56,23 @@
     }
 
     button {
-      height: auto;
-      width: auto;
+      height: 55px;
+      width: 100px;
       font-size: 30px;
       text-align: center;
+      margin-left: 210px;
     }
 
-    #button1 {
-      margin-left: 100px;
-    }
   </style>
 </head>
 
   <body>
+
     <div class="container"><div class="content">
-    <h2>Please choose the number of days you want to work out this week:</h2><br>
-    <select class="select_style">
-      <option value="1">1: Feeling lazy -O-</option>
-      <option value="2">2: Need some motivation \w/</option>
-      <option value="3">3: Getting serious!</option>
-      <option value="4">4: I'm an expert!</option>
-      <option value="5">5: Workout pro</option>
-      <option value="6">6: Gym is my home!</option>
-      <option value="7">7: Future Schwarzenegger!</option>
-    </select>
-    <h2>Please enter the total hours you plan to work out this week:</h2><br>
+    <h2>Please enter your zip code:</h2><br>
     <form action="action_page.php">
-      <input type="text"></input><br><br><br><br>
-      <button class="button" id="button1"><a href="index.html" style="text-decoration:none">Back</a></button>
-      <button class="button"><a href="choose.html" style="text-decoration:none">Schedule</a></button>
+      <input type="text" value="Your 5-digit zip code"></input><br><br><br><br>
+      <button class="button"><a href="question.html" style="text-decoration:none">Next</a></button>
     </div></div>
   </body>
 </html>
