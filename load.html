@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html" charset="UTF-8" />
+    <meta name="author" content="Yifei Li" >
+    <title>Enter Your Zip Code</title>
+    <link rel="icon" href="assets/load.gif" type="image/icon" />
+  <header>
+
+  </header>
+
+  <style>
+    html, body {
+      height: 100%;
+      width: 100%;
+    }
+
+    .container {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      height: 100%;
+      width: 100%;
+    }
+
+    .content {
+      width: 440px; // I'm pretty sure this is required but haven't checked
+    }
+
+    .middle {
+      text-align: center;
+    }
+  </style>
+</head>
+
+  <body>
+    <script type="text/javascript">
+        function Redirect()
+        {
+            window.location="under_dev.html";
+        }
+        setTimeout('Redirect()', 3000);
+    </script>
+    <div class="container"><div class="content">
+      <figure>
+        <img id="load" src="assets/load.gif" alt="loading" width="100%">
+      </figure>
+      <h2 class="middle">Searching Data...</h2>
+    </div></div>
+  </body>
+</html>

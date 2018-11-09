@@ -79,3 +79,15 @@ tr td:nth-child(1){
     font-size: 12px;
     text-align: center;
 }
+
+button {
+  border: 0px;
+  background-color: #0099cc;
+  color: white;
+  border-radius: 15px;
+}
+
+button:hover {
+  background-color: purple;
+  cursor: cell;
+}
