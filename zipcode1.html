@@ -3,9 +3,9 @@
   <head>
     <meta http-equiv="content-type" content="text/html" charset="UTF-8" />
     <meta name="author" content="Yifei Li" >
-    <title>Enter Your Username and Password</title>
+    <title>Enter Your Zip Code</title>
     <link rel="icon" href="assets/zip.png" type="image/icon" />
-    <script src="index.js"></script>
+    <script src="zipcode.js"></script>
 
   <header>
 
@@ -43,9 +43,7 @@
       background-color: #0099cc;
       color: white;
       border-radius: 15px;
-      height: 55px;
-      width: 100px;
-      font-size: 25px;
+      font-size: 30px;
     }
 
     .button:hover {
@@ -61,30 +59,16 @@
     }
 
 
-    .middle {
-      margin-left: 50px
-    }
+
   </style>
 </head>
 
   <body>
 
     <div class="container"><div class="content">
-      <h2 class="middle"><font color="white">Find Free Gyms Near You</font></h2><br>
-
-      <label for="First_Name"><font color="white">Username:</font></label>
-      <input name="first_name" type="text" id="userName" value=""/><br><br>
-      <label for="Name"><font color="white">Password:</font></label>
-      <input name="last_name" type="text" /><br><br><br>
-        <center>
-          <button class="button">
-            <a href='mainpage.html' style="text-decoration:none" onclick="myFunction()">Login</a>
-          </button>
-          <button class="button">
-            <a href='zipcode1.html' style="text-decoration:none" onclick="myFunction()">Sign up</a>
-          </button>
-        </center>
-
+    <h2>Please enter your zip code:</h2><br>
+      <input type="text" placeholder="Your 5-digit zip code" id="zipcode" maxlength="5"></input><br><br><br><br>
+      <button class="button"><a href="calender.html" style="text-decoration:none" onclick="myFunction()">Next</a></button>
     </div></div>
   </body>
 </html>

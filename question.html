@@ -5,6 +5,8 @@
     <meta name="author" content="Yifei Li" >
     <title>Enter Your Zip Code</title>
     <link rel="icon" href="assets/survey.png" type="image/icon" />
+    <script src="question.js"></script>
+
   <header>
 
   </header>
@@ -80,7 +82,7 @@
   <body>
     <div class="container"><div class="content">
     <h2>Please choose the number of days you want to work out this week:</h2><br>
-    <select class="select_style">
+    <select class="select_style" id="myselect">
       <option value="1">1: Feeling lazy -O-</option>
       <option value="2">2: Need some motivation \w/</option>
       <option value="3">3: Getting serious!</option>
@@ -89,10 +91,11 @@
       <option value="6">6: Gym is my home!</option>
       <option value="7">7: Future Schwarzenegger!</option>
     </select>
+
     <h2>Please enter the total hours you plan to work out this week:</h2><br>
-      <input type="text"></input><br><br><br><br>
-      <button class="button" id="button1"><a href="index.html" style="text-decoration:none">Back</a></button>
-      <button class="button"><a href="choose.html" style="text-decoration:none">Schedule</a></button>
+      <input type="text" id="myhours" maxlength="2"></input><br><br><br><br>
+      <button class="button" id="button1"><a href="calendar.html" style="text-decoration:none">Back</a></button>
+      <button class="button" onclick="myFunction()"><a href="load.html" style="text-decoration:none">Schedule</a></button>
     </div></div>
   </body>
 </html>

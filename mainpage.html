@@ -5,15 +5,23 @@
   <title>calendar</title>
   <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="calendar.css" rel="stylesheet">
+  <link href="mainpage.css" rel="stylesheet">
 </head>
 
 <body>
-  <div class="container">
+  <div class="container" id="noborder">
+
+
     <center>
-			<h1>Please select all your free time available: </h1>
-			<h3>please click the unit on the calendar to choose the time</h3>
-		</center>
+			<h1>This is your current work out plan</h1>
+    </center>
+
+    <div valign="top">
+      <h2 id="userName1">You login as Fakeuser2018</h2>
+      <h3 id="zipcode1">your current zipcode: 92122</h3>
+      <h3 id="hours1">Total time of workout: 6 hours</h3>
+      <h3 id="days1">Days of workout: 3 days</h3>
+
 
     <table class="choice">
       <tr>
@@ -170,7 +178,7 @@
       <tr>
         <td>2pm-3pm</td>
         <td></td>
-        <td></td>
+        <td class='select'></td>
         <td></td>
         <td></td>
         <td></td>
@@ -180,21 +188,21 @@
       <tr>
         <td>3pm-4pm</td>
         <td></td>
+        <td class='select'></td>
         <td></td>
+        <td class='select'></td>
         <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td class='select'></td>
         <td></td>
       </tr>
       <tr>
         <td>4pm-5pm</td>
         <td></td>
+        <td class='select'></td>
         <td></td>
+        <td class='select'></td>
         <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td class='select'></td>
         <td></td>
       </tr>
       <tr>
@@ -202,7 +210,7 @@
         <td></td>
         <td></td>
         <td></td>
-        <td></td>
+        <td class='select'></td>
         <td></td>
         <td></td>
         <td></td>
@@ -268,18 +276,56 @@
         <td></td>
       </tr>
     </table>
+    </div>
+
+    <div valign="top">
+
+      <h3 id="zipcode2">According to your location zipcode 92122</h3>
+			<h3>Gyms listed below are optimal choices</h3>
+
+      <hr color= #000000>
+
+      <h2>JCC Fitness, Gym, Pool & Sports Leagues </h2>
+      <h3>Address: 4126 Executive Dr</h3>
+      <h3>Contact information: (858) 457-3030</h3>
+      <p> This gym is free and at the time you chose </p>
+      <button><a href="https://www.lfjcc.org/qualcomm/index.aspx" style="text-decoration:none"><font size="5px">More information</font></a></button>
+
+      <hr color= #000000>
+
+      <h2>24 Hour Fitness </h2>
+      <h3>Address: 4425 La Jolla Village Dr</h3>
+      <h3>Contact information: (858) 457-3930</h3>
+      <p> This gym is not very busy at the time you choose and it is free </p>
+      <button><a href="https://www.24hourfitness.com/?gclid=EAIaIQobChMI9LvJ84zY3gIVZB6tBh2GPwvJEBAYAiAAEgIidPD_BwE&adb_id=PPC_ADB_ACQ_102018_JS181001ADBPP&ef_id=EAIaIQobChMI9LvJ84zY3gIVZB6tBh2GPwvJEBAYAiAAEgIidPD_BwE:G:s&s_kwcid=AL!6388!3!304486710711!p!!g!!gyms%20nearby"
+        style="text-decoration:none"><font size="5px">More information</font></a></button>
+
+      <hr color= #000000>
+
+      <h2>The Boxing Club Sport & Fitness </h2>
+      <h3>Address: 8650 Genesee Ave #206</h3>
+      <h3>Contact information: (858) 622-1903</h3>
+      <p> This gym is a little busy at the time but it is still a good alternative </p>
+      <button><a href="https://www.theboxingclub.net/utcla-jolla?utm_source=Google%20My%20Business&utm_medium=Google%20My%20Business&utm_content=La%20Jolla"
+        style="text-decoration:none"><font size="5px">More information</font></a></button>
+
+    </div>
+
 
     <center>
 
-      <button><a href="zipcode.html" style="text-decoration:none" ="white"><font size="5px">Back</font></a></button>
-      <button class="clean"><font size="5px">Reset</font></button>
-      <button><a href="question.html" style="text-decoration:none"><font size="5px">Confirm</font></a></button>
+      <button><a href="index.html" style="text-decoration:none" ="white"><font size="5px">Log out</font></a></button>
+      <button class="clean"><font size="5px">Create a new plan</font></button>
+
     </center>
 
     <center class="wrap" id="test">
       <center class='content'>
-        <button class="clean2" id="middle"><font size="10px">Reset</font></button>
-        <button class="clean" id="middle"><font size="10px">Cancel</font></button>
+        <button class="clean2" id="middle" href="zipcode.html"><font size="5px">
+          <a href="zipcode.html" style="text-decoration:none">Create a new plan</a>
+        </font>
+        </button>
+        <button class="clean" id="middle"><font size="5px">Cancel</font></button>
       </center>
     </center>
 
@@ -287,6 +333,6 @@
   </div>
 
   <script src="https://code.jquery.com/jquery.js"></script>
-  <script src="calendar.js"></script>
+  <script src="mainpage.js"></script>
 </body>
 </html>

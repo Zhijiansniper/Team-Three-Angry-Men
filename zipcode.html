@@ -5,6 +5,8 @@
     <meta name="author" content="Yifei Li" >
     <title>Enter Your Zip Code</title>
     <link rel="icon" href="assets/zip.png" type="image/icon" />
+    <script src="zipcode.js"></script>
+
   <header>
 
   </header>
@@ -41,6 +43,7 @@
       background-color: #0099cc;
       color: white;
       border-radius: 15px;
+      font-size: 30px;
     }
 
     .button:hover {
@@ -55,13 +58,7 @@
       text-align: center;
     }
 
-    button {
-      height: 55px;
-      width: 100px;
-      font-size: 30px;
-      text-align: center;
-      margin-left: 210px;
-    }
+
 
   </style>
 </head>
@@ -70,8 +67,9 @@
 
     <div class="container"><div class="content">
     <h2>Please enter your zip code:</h2><br>
-      <input type="text" value="Your 5-digit zip code"></input><br><br><br><br>
-      <button class="button"><a href="question.html" style="text-decoration:none">Next</a></button>
+      <input type="text" placeholder="Your 5-digit zip code" id="zipcode" maxlength="5"></input><br><br><br><br>
+      <button class="button"><a href="mainpage.html" style="text-decoration:none">Back</a></button>
+      <button class="button"><a href="calender.html" style="text-decoration:none" onclick="myFunction()">Next</a></button>
     </div></div>
   </body>
 </html>
