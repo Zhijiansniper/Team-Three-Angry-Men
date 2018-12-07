@@ -20,18 +20,33 @@
       height: 100%;
       width: 100%;
       background-image: url("assets/background.jpg");
-      background-position: center;
+      background-position: fixed;
       background-repeat: no-repeat;
       background-size: cover;
       padding-bottom: 100px;
       margin: 0px
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
     }
     .container {
       align-items: center;
       display: flex;
       justify-content: center;
       height: 100%;
-      width: 100%;
+      background: rgba(0,0,0,0.3);
+      color: white;
+      padding: 2rem;
+      width: 33%;
+      margin:2rem;
+
+      font-size: 1.2rem;
+      border-radius: 15px;
+
+      font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+      font-weight:100;
+
     }
 
     .content {
@@ -39,16 +54,22 @@
     }
 
     .button {
-      border: 0px;
-      background-color: #0099cc;
-      color: white;
-      border-radius: 15px;
-      font-size: 30px;
+      display: block;
+  width: 80%;
+  padding: .4rem;
+  border: none;
+  margin: 1rem auto;
+  font-size: 1.3rem;
+  background: rgba(255,255,255,0.23);
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 1.0s background;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
     }
 
     .button:hover {
-      background-color: purple;
-      cursor: cell;
+      background: rgba(0,0,0,0.5);
     }
 
     input {
@@ -66,10 +87,12 @@
   <body>
 
     <div class="container"><div class="content">
+    <center>
     <h2>Please enter your zip code:</h2><br>
       <input type="text" placeholder="Your 5-digit zip code" id="zipcode" maxlength="5"></input><br><br><br><br>
-      <button class="button"><a href="mainpage.html" style="text-decoration:none">Cancel</a></button>
-      <button class="button"><a href="load.html" style="text-decoration:none" onclick="myFunction()">done</a></button>
+      <button class="button" onclick="myFunction2()"><a style="text-decoration:none">Cancel</a></button>
+      <button class="button" onclick="myFunction3()"><a style="text-decoration:none">Done</a></button>
+    </center>
     </div></div>
   </body>
 </html>

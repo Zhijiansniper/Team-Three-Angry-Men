@@ -20,3 +20,19 @@ $('td').click(function(){
     $(this).addClass('select');
   }
 });
+
+function myFunction() {
+    window.location = "zipcode.html";
+}
+
+function myFunction2() {
+    window.location = "question.html";
+}
+
+function myFunction3() {
+    window.location = "mainpage.html";
+}
+
+function myFunction4() {
+    window.location = "load.html";
+}
